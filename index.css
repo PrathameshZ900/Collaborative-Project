@@ -24,3 +24,19 @@ h1{
 #main>div>img:last-child{
     width: 200px;
 }
+
+@media only screen and (max-width: 1000px) and (min-width: 600px){
+    #main{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media only screen and (max-width: 600px){
+    #main{
+        grid-template-columns: repeat(1,1fr);
+    
+    }
+    #main>div{
+        width: 70%;
+        margin: auto;
+    }
+}
