@@ -63,7 +63,39 @@
             font-size: 18px;
             font-weight: 400;
         }
-        
+        @media screen and (max-width: 1023px) {
+            #container {
+                width: 93%;
+                margin: auto; /* Center the container horizontally */
+                display: grid;
+                grid-template-columns: repeat(3, minmax(200px, 1fr));
+                /* border: 2px solid black; */
+                gap: 25px;
+            
+            }
+        }
+        @media screen and (max-width: 767px) {
+            #container {
+                width: 93%;
+                margin: auto; /* Center the container horizontally */
+                display: grid;
+                grid-template-columns: repeat(2, minmax(200px, 1fr));
+                /* border: 2px solid black; */
+                gap: 25px;
+            
+            }
+        }
+        @media screen and (max-width: 107px) {
+            #container {
+                width: 93%;
+                margin: auto; /* Center the container horizontally */
+                display: grid;
+                grid-template-columns: repeat(1, minmax(200px, 1fr));
+                /* border: 2px solid black; */
+                gap: 25px;
+            
+            }
+        }
     
     
     </style>
