@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github 2 Assignment</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .navbar1{
+            display: flex;
+            background-color: rgb(37,37,37);
+            color: white;
+            border: 2px solid black;
+            justify-content: space-between;
+            position: relative;
+            padding-top: 10px;
+            margin: auto;
+            padding-left: 20px;
+            /* padding-bottom: 10px; */
+            font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, "Open Sans", "Bebas Neue", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", serif, Arial, sans-serif;
+        }
+        
+        .navbar1>.second{
+            width: 50%;
+            border: 2px solid blue;
+            
+        }
+        .second{
+            display: flex;
+            justify-content: space-between;
+        }
+        .second>a{
+            
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            padding-left: 5px;
+        }
+        .second>img{
+            height: 40px;
+        }
+        .icon{
+            font-size: 20px;
+        }
+        .navbar2{
+            margin: auto;
+            display: flex;
+            /* border: 2px solid black; */
+            justify-content: space-between;
+            width: 100%; 
+        }
+        .left{
+            width: 40%;
+            display: flex;
+            /* border:2px solid  blue; */
+            position: relative;
+            top: 30px;
+            left: 100px;
+            font-size: 15px;
+            justify-content: space-between;
+        }
+        .right{
+            display: flex;
+            /* border:2px solid  blue; */
+            position: relative;
+            top: 20px;
+            font-size: 15px;
+            justify-content: space-between;
+        }
+        .left div:first-child{
+            width:150px;
+        }
+        .left>div>img{
+            width: 100%;
+        }
+        .left>li{
+            list-style: none;
+            font-family: "Neue Plak SemiBold";
+            color: rgb(12, 35, 64);
+            font-weight: 800;
+        }
+        .left>li:last-child{
+            color: rgb(196, 12, 47);
+        }
+        
+        .right{    
+            width: 450px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .search{
+            border-bottom: 2px solid rgb(58, 58, 58);
+            width: 170px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .logo{
+            width: 260px;
+            height: 50px;
+            border-radius: 25px;
+            background-color: rgb(196,12,47);
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            color: white;
+
+        }
+        .search i{
+            font-size: 25px;
+            margin-right: 10px;
+            margin-left: -5px;
+            margin-right: 10px;
+            opacity: 80%;
+        }
+        .search input{
+            width: 90px;
+            height: 30px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+        }
+        .logo i{
+            margin-left: 15px;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        .logo h3{
+            margin: 0;
+            font-size: 13px;
+        }
+        .logo p{
+            margin: 0;
+            font-size: 10px;
+            margin-top: 3px;
+            opacity: 90%;
+        }
+        .container{
+            width: 80%;
+            margin:auto;
+            
+            display: flex;
+            border: 2px solid red;
+            margin-top: 5%;
+        }
+        .image-container {
+            position: relative;
+            padding-left: 30px;
+            width: 40%; /* Adjust the width as needed */
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 0%;
+            left: 12%;
+            color: white;
+            font-size: 18px; /* Adjust the font size as needed */
+            font-weight: bold;
+            background:linear-gradient(to right,green,skyblue);
+        }
+        .heart {
+            position: absolute;
+            top: -2%;
+            left: 82%;
+            color: white;   
+        }
+        .text{
+            margin-top: 20px;
+        }
+        .text p{
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar1">
+        <div class="first">MORE BRANDS</div>
+        <div class="second">
+            <a class="icon" href=""><i class="fa-solid fa-location-dot"></i></i></a>
+            <a href="">STORES</a>
+            <p>|</p>
+            <a class="icon" href=""><i class="fa-regular fa-envelope"></i></a>
+            <a href="">CONTACT US</a>
+            <p>|</p>
+            <a class="icon" href=""><i class="fa-solid fa-user"></i></a>
+            <a href="">LOG IN</a>
+            <p>|</p>
+            <a class="icon" href=""><i class="fa-regular fa-heart"></i></i></a>
+            <p>|</p>
+            <a class="icon" href=""><i class="fa-solid fa-briefcase"></i></a>
+            <img class="leader_img" src="https://upload.wikimedia.org/wikipedia/en/f/fc/Aditya_Birla_Fashion_and_Retail.svg" alt=""> 
+        </div>
+    </div>
+    <div class="navbar2">
+        <div class="left">
+            <div><img src="https://imagescdn.reebok.in/img/app/brands/superapp/Icons/header_brand_logo_RBK.png?q=75&auto=format" alt="Reebok"></div>
+            <li>NEW</li>
+            <li>MEN</li>
+            <li>WOMEN</li>
+            <li>ICONS</li>
+            <li>SPORTS</li>
+            <li>CLASSICS</li>
+            <li>SALE</li>
+        </div>
+        <div class="right">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search" name="search">                
+            </div>
+            <div class="logo">
+                <i class="fa-solid fa-truck-fast"></i>
+                <div>
+                    <h3>EXPRESS DELIVERY</h3>
+                    <p>Select your nearest store ></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="image-container">
+            <img src="https://imagescdn.reebok.in/img/app/product/3/39627953-12965466.jpg?q=75&auto=format&w=387" alt="Image" class="image">
+            <div class="text-overlay">I Am The New</div>
+            <div class="heart"><img src="https://imagescdn.reebok.in/img/app/brands/superapp/Icons/wishlist_icon_black.svg" alt=""></div>
+            <div class="text">
+                <p>TRAINING SHOES</p>
+                <p>Reebok Women NFX Trainer</p>
+                <p>7,599</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://imagescdn.reebok.in/img/app/product/3/39627953-12965466.jpg?q=75&auto=format&w=387" alt="Image" class="image">
+            <div class="text-overlay">I Am The New</div>
+            <div class="heart"><img src="https://imagescdn.reebok.in/img/app/brands/superapp/Icons/wishlist_icon_black.svg" alt=""></div>
+            <div class="text">
+                <p>TRAINING SHOES</p>
+                <p>Reebok Women NFX Trainer</p>
+                <p>7,599</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://imagescdn.reebok.in/img/app/product/3/39627953-12965466.jpg?q=75&auto=format&w=387" alt="Image" class="image">
+            <div class="text-overlay">I Am The New</div>
+            <div class="heart"><img src="https://imagescdn.reebok.in/img/app/brands/superapp/Icons/wishlist_icon_black.svg" alt=""></div>
+            <div class="text">
+                <p>TRAINING SHOES</p>
+                <p>Reebok Women NFX Trainer</p>
+                <p>7,599</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://imagescdn.reebok.in/img/app/product/3/39627953-12965466.jpg?q=75&auto=format&w=387" alt="Image" class="image">
+            <div class="text-overlay">I Am The New</div>
+            <div class="heart"><img src="https://imagescdn.reebok.in/img/app/brands/superapp/Icons/wishlist_icon_black.svg" alt=""></div>
+            <div class="text">
+                <p>TRAINING SHOES</p>
+                <p>Reebok Women NFX Trainer</p>
+                <p>7,599</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
